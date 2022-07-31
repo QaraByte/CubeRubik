@@ -29,6 +29,23 @@ body {
     background-color: yellow;
 }
 
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.cube{
+    display:flex;
+}
+
+.table-cube {
+    width:90px;
+    display:inline-block;
+}
+
 .table-cube td {
     border: 1px solid #8f7e7e;
 }
@@ -44,6 +61,18 @@ body {
     /*float:left;*/
 }
 
-.top-side, .back-side, .front-side, .bottom-side{
+.top-side, .back-side, .front-side, .bottom-side, .left-side, .right-side{
     margin:10px;
+    /*width:150px;*/
+    /*display:inline-block;*/
+}
+
+.col-cube-1, col-cube-2, .col-cube-3{
+    display:inline-block;
+    /*width:200px;*/
+}
+
+.col-cube-1, .col-cube-3{
+    display:flex;
+    align-items:flex-end;
 }

@@ -16,4 +16,12 @@ $(document).ready(function () {
     $('.bottom-side .layer3-bottom').addClass('red');
     $('.bottom-side .layer2-bottom').addClass('red');
     $('.bottom-side .layer1-bottom').addClass('red');
+
+    $('.left-side .layer3-left').addClass('blue');
+    $('.left-side .layer2-left').addClass('blue');
+    $('.left-side .layer1-left').addClass('blue');
+
+    $('.right-side .layer3-right').addClass('green');
+    $('.right-side .layer2-right').addClass('green');
+    $('.right-side .layer1-right').addClass('green');
 });
