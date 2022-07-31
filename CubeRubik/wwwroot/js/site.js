@@ -24,4 +24,17 @@ $(document).ready(function () {
     $('.right-side .layer3-right').addClass('green');
     $('.right-side .layer2-right').addClass('green');
     $('.right-side .layer1-right').addClass('green');
+
+    ClickMixButton();
 });
+
+function ClickMixButton() {
+    $(".button").click(function () {
+        $.ajax({
+            url: "Home/Mix",
+            context: document.body
+        }).done(function () {
+            $(this).addClass("done");
+        });
+    });
+}
