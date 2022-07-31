@@ -5,5 +5,15 @@
 
 $(document).ready(function () {
     console.log("ready!");
-    $('.back-side .layer1').addClass('red');
+    $('.top-side .layer1-top').addClass('orange');
+    $('.top-side .layer2-top').addClass('orange');
+    $('.top-side .layer3-top').addClass('orange');
+
+    $('.front-side .layer3-front').addClass('yellow');
+    $('.front-side .layer2-front').addClass('yellow');
+    $('.front-side .layer1-front').addClass('yellow');
+
+    $('.bottom-side .layer3-bottom').addClass('red');
+    $('.bottom-side .layer2-bottom').addClass('red');
+    $('.bottom-side .layer1-bottom').addClass('red');
 });

@@ -20,3 +20,30 @@ body {
 .red{
     background-color:red;
 }
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.table-cube td {
+    border: 1px solid #8f7e7e;
+}
+
+.part-cube{
+    width:30px;
+    height:30px;
+    /*border:1px solid #8f7e7e;*/
+}
+
+.layer1, .layer2, .layer3{
+    /*display:inline-flex;*/
+    /*float:left;*/
+}
+
+.top-side, .back-side, .front-side, .bottom-side{
+    margin:10px;
+}
