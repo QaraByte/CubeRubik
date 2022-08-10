@@ -1,11 +1,11 @@
 ﻿namespace CubeRubik.Classes
 {
-    public class Green:Side
+    public class Green//:Side
     {
-        public Layer layer = new Layer();
+        //public Layer layer = new Layer();
         public Green()
         {
-            layer.points = new List<int>();
+            //layer.points = new List<int>();
         }
     }
 }

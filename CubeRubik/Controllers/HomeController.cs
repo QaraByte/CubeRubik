@@ -37,6 +37,10 @@ namespace CubeRubik.Controllers
             //Green green = new Green();
 
             Cube cube = new Cube();
+            cube.Side = new Side(1);
+            //cube.Side._color = new Side.Color();
+            //cube.Side._color
+            //cube.Side.Rotate(1, new Red().layer.vLayer1);
 
             //for (int i=0; i<ONE_SIDE; i++)
             //{
