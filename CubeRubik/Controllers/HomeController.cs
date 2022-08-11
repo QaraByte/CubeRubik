@@ -29,18 +29,13 @@ namespace CubeRubik.Controllers
             //List<int> red_side = new List<int>();
             //List<int> blue_side = new List<int>();
             //List<int> green_side = new List<int>();
-            //Yellow yellow1 = new Yellow();
-            //Orange orange = new Orange();
-            //White white = new White();
-            //Red red = new Red();
-            //Blue blue = new Blue();
-            //Green green = new Green();
+            
 
             Cube cube = new Cube();
-            cube.Side = new Side(1);
+            
             //cube.Side._color = new Side.Color();
             //cube.Side._color
-            //cube.Side.Rotate(1, new Red().layer.vLayer1);
+            cube.SideRed.Rotate(1, cube.SideRed.vLayer3);
 
             //for (int i=0; i<ONE_SIDE; i++)
             //{
@@ -48,7 +43,7 @@ namespace CubeRubik.Controllers
             //    if(yellow >= 0 && yellow<9)
             //    {
             //        //yellow_side.Add(yellow);
-                    
+
             //        yellow1.layer.points.Add(yellow);
             //    }
             //    if(yellow>=9 && yellow<18)
@@ -58,25 +53,25 @@ namespace CubeRubik.Controllers
             //    if(yellow>=18 && yellow<27)
             //    {
             //        //white_side.Add(yellow);
-                    
+
             //        white.layer.points.Add(yellow);
             //    }
             //    if (yellow >= 27 && yellow < 36)
             //    {
             //        //red_side.Add(yellow);
-                    
+
             //        red.layer.points.Add(yellow);
             //    }
             //    if (yellow >= 36 && yellow < 45)
             //    {
             //        //blue_side.Add(yellow);
-                    
+
             //        blue.layer.points.Add(yellow);
             //    }
             //    if (yellow >= 45 && yellow < 54)
             //    {
             //        //green_side.Add(yellow);
-                    
+
             //        green.layer.points.Add(yellow);
             //    }
             //}
