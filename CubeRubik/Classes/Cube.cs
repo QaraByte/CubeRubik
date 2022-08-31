@@ -3,22 +3,23 @@
     public class Cube
     {
         //public Layer Layer { get; set; }
-        public Side SideRed { get; set; }
-        public Side SideYellow { get; set; }
-        public Side SideOrange { get; set; }
-        public Side SideWhite { get; set; }
-        public Side SideBlue { get; set; }
-        public Side SideGreen { get; set; }
+        public Side SideOne { get; set; }
+        public Side SideTwo { get; set; }
+        public Side SideThree { get; set; }
+        public Side SideFour { get; set; }
+        public Side SideFive { get; set; }
+        public Side SideSix { get; set; }
+        //public Layer Layer { get; set; }
         public Cube()
         {
             //Layer = new Layer();
             //Red red = new Red();
-            SideRed = new Side(1);
-            SideYellow = new Side(2);
-            SideOrange = new Side(3);
-            SideWhite = new Side(4);
-            SideBlue = new Side(5);
-            SideGreen = new Side(6);
+            SideOne = new Side(Side.Color.RED);
+            SideTwo = new Side(Side.Color.YELLOW);
+            SideThree = new Side(Side.Color.ORANGE);
+            SideFour = new Side(Side.Color.WHITE);
+            SideFive = new Side(Side.Color.BLUE);
+            SideSix = new Side(Side.Color.GREEN);
         }
     }
 }

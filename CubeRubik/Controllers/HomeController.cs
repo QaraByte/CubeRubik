@@ -21,21 +21,17 @@ namespace CubeRubik.Controllers
             return View();
         }
 
+        /*
+        /---/
+        /---/
+        /---/
+        */
+
         public ActionResult Mix()
         {
-            //List<int> yellow_side = new List<int>();
-            //List<int> orange_side = new List<int>();
-            //List<int> white_side = new List<int>();
-            //List<int> red_side = new List<int>();
-            //List<int> blue_side = new List<int>();
-            //List<int> green_side = new List<int>();
-            
-
             Cube cube = new Cube();
             
-            //cube.Side._color = new Side.Color();
-            //cube.Side._color
-            cube.SideRed.Rotate(1, cube.SideRed.vLayer3);
+            cube.SideOne.Rotate(1, Layer.TypeLayer.V3);
 
             //for (int i=0; i<ONE_SIDE; i++)
             //{

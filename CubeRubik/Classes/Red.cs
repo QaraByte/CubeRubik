@@ -4,13 +4,13 @@
     {
         public int _color { get; set; }
 
-        public override void Rotate(int countTurns, int[] layer)
-        {
-            if(layer==vLayer3)
-            {
+        //public override void Rotate(int countTurns, int[] layer)
+        //{
+        //    //if(layer==vLayer3)
+        //    //{
                 
-            }
-        }
+        //    //}
+        //}
 
         public Red(int color) : base(color)
         {

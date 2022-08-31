@@ -3,141 +3,75 @@
     public class Side//:Cube
     {
         //public Layer Layer { get; set; }
-        public virtual void Rotate(int countTurns, int[] layer)
+        public virtual void Rotate(int countTurns, int typeLayer)
         {
-
+            if(typeLayer==Layer.TypeLayer.V3)
+            {
+                //this.layer1.vLayer3
+            }
         }
 
-        public int _color;
+        public int _sideNumber;
 
-        public int[] hLayer1;
-        public int[] hLayer2;
-        public int[] hLayer3;
-        public int[] vLayer1;
-        public int[] vLayer2;
-        public int[] vLayer3;
+        //public int[] hLayer1;
+        //Layer layer1;
+        public Layer hLayer1 { get; set; }
+        //public int[] hLayer1 { get; set; }
+        public Layer hLayer2 { get; set; }
+        public Layer hLayer3 { get; set; }
+        public Layer vLayer1 { get; set; }
+        public Layer vLayer2 { get; set; }
+        public Layer vLayer3 { get; set; }
 
-        public Side(int color)
+        public Side(int sideNumber)
         {
-            if(color==Color.RED)
+            if(sideNumber == SideNumber.ONE)
             {
-                _color = Color.RED;
-                hLayer1 = new int[3];
-                hLayer1[0] = Color.RED;
-                hLayer1[1] = Color.RED;
-                hLayer1[2] = Color.RED;
-                hLayer2 = new int[3];
-                hLayer2[0] = Color.RED;
-                hLayer2[1] = Color.RED;
-                hLayer2[2] = Color.RED;
-                hLayer3 = new int[3];
-                hLayer3[0] = Color.RED;
-                hLayer3[1] = Color.RED;
-                hLayer3[2] = Color.RED;
+                _sideNumber = SideNumber.ONE;
+                hLayer1 = new Layer(Layer.TypeLayer.H1, Color.RED, Color.RED, Color.RED);
+                hLayer2 = new Layer(Layer.TypeLayer.H2, Color.RED, Color.RED, Color.RED);
+                hLayer3 = new Layer(Layer.TypeLayer.H3, Color.RED, Color.RED, Color.RED);
 
                 //Вертикальные слои
-                vLayer1 = new int[3];
-                vLayer1[0] = hLayer1[0];
-                vLayer1[1] = hLayer2[0];
-                vLayer1[2] = hLayer3[0];
-                vLayer2 = new int[3];
-                vLayer2[0] = hLayer1[1];
-                vLayer2[1] = hLayer2[1];
-                vLayer2[2] = hLayer3[1];
-                vLayer3 = new int[3];
-                vLayer3[0] = hLayer1[2];
-                vLayer3[1] = hLayer2[2];
-                vLayer3[2] = hLayer3[2];
+                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.RED, Color.RED, Color.RED);
+                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.RED, Color.RED, Color.RED);
+                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.RED, Color.RED, Color.RED);
             }
-            if (color == Color.YELLOW)
+            if (sideNumber == SideNumber.TWO)
             {
-                _color = Color.YELLOW;
-                hLayer1 = new int[3];
-                hLayer1[0] = Color.YELLOW;
-                hLayer1[1] = Color.YELLOW;
-                hLayer1[2] = Color.YELLOW;
-                hLayer2 = new int[3];
-                hLayer2[0] = Color.YELLOW;
-                hLayer2[1] = Color.YELLOW;
-                hLayer2[2] = Color.YELLOW;
-                hLayer3 = new int[3];
-                hLayer3[0] = Color.YELLOW;
-                hLayer3[1] = Color.YELLOW;
-                hLayer3[2] = Color.YELLOW;
-
-                //Вертикальные слои
-                vLayer1 = new int[3];
-                vLayer1[0] = hLayer1[0];
-                vLayer1[1] = hLayer2[0];
-                vLayer1[2] = hLayer3[0];
-                vLayer2 = new int[3];
-                vLayer2[0] = hLayer1[1];
-                vLayer2[1] = hLayer2[1];
-                vLayer2[2] = hLayer3[1];
-                vLayer3 = new int[3];
-                vLayer3[0] = hLayer1[2];
-                vLayer3[1] = hLayer2[2];
-                vLayer3[2] = hLayer3[2];
+                _sideNumber = SideNumber.TWO;
+                //Горизонтальные слои
+                hLayer1 = new Layer(Layer.TypeLayer.H1, Color.YELLOW, Color.YELLOW, Color.YELLOW);
+                hLayer2 = new Layer(Layer.TypeLayer.H2, Color.YELLOW, Color.YELLOW, Color.YELLOW);
+                hLayer3 = new Layer(Layer.TypeLayer.H3, Color.YELLOW, Color.YELLOW, Color.YELLOW);
+                //Вертикальные слои                          
+                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.YELLOW, Color.YELLOW, Color.YELLOW);
+                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.YELLOW, Color.YELLOW, Color.YELLOW);
+                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.YELLOW, Color.YELLOW, Color.YELLOW);
             }
-            if (color == Color.ORANGE)
+            if (sideNumber == SideNumber.THREE)
             {
-                _color = Color.ORANGE;
-                hLayer1 = new int[3];
-                hLayer1[0] = Color.ORANGE;
-                hLayer1[1] = Color.ORANGE;
-                hLayer1[2] = Color.ORANGE;
-                hLayer2 = new int[3];
-                hLayer2[0] = Color.ORANGE;
-                hLayer2[1] = Color.ORANGE;
-                hLayer2[2] = Color.ORANGE;
-                hLayer3 = new int[3];
-                hLayer3[0] = Color.ORANGE;
-                hLayer3[1] = Color.ORANGE;
-                hLayer3[2] = Color.ORANGE;
-
-                //Вертикальные слои
-                vLayer1 = new int[3];
-                vLayer1[0] = hLayer1[0];
-                vLayer1[1] = hLayer2[0];
-                vLayer1[2] = hLayer3[0];
-                vLayer2 = new int[3];
-                vLayer2[0] = hLayer1[1];
-                vLayer2[1] = hLayer2[1];
-                vLayer2[2] = hLayer3[1];
-                vLayer3 = new int[3];
-                vLayer3[0] = hLayer1[2];
-                vLayer3[1] = hLayer2[2];
-                vLayer3[2] = hLayer3[2];
+                _sideNumber = SideNumber.THREE;
+                //Горизонтальные слои
+                hLayer1 = new Layer(Layer.TypeLayer.H1, Color.ORANGE, Color.ORANGE, Color.ORANGE);
+                hLayer2 = new Layer(Layer.TypeLayer.H2, Color.ORANGE, Color.ORANGE, Color.ORANGE);
+                hLayer3 = new Layer(Layer.TypeLayer.H3, Color.ORANGE, Color.ORANGE, Color.ORANGE);
+                //Вертикальные слои                           
+                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.ORANGE, Color.ORANGE, Color.ORANGE);
+                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.ORANGE, Color.ORANGE, Color.ORANGE);
+                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.ORANGE, Color.ORANGE, Color.ORANGE);
             }
-            if (color == Color.WHITE)
+            if (sideNumber == SideNumber.FOUR)
             {
-                _color = Color.WHITE;
-                hLayer1 = new int[3];
-                hLayer1[0] = Color.WHITE;
-                hLayer1[1] = Color.WHITE;
-                hLayer1[2] = Color.WHITE;
-                hLayer2 = new int[3];
-                hLayer2[0] = Color.WHITE;
-                hLayer2[1] = Color.WHITE;
-                hLayer2[2] = Color.WHITE;
-                hLayer3 = new int[3];
-                hLayer3[0] = Color.WHITE;
-                hLayer3[1] = Color.WHITE;
-                hLayer3[2] = Color.WHITE;
-
-                //Вертикальные слои
-                vLayer1 = new int[3];
-                vLayer1[0] = hLayer1[0];
-                vLayer1[1] = hLayer2[0];
-                vLayer1[2] = hLayer3[0];
-                vLayer2 = new int[3];
-                vLayer2[0] = hLayer1[1];
-                vLayer2[1] = hLayer2[1];
-                vLayer2[2] = hLayer3[1];
-                vLayer3 = new int[3];
-                vLayer3[0] = hLayer1[2];
-                vLayer3[1] = hLayer2[2];
-                vLayer3[2] = hLayer3[2];
+                _sideNumber = SideNumber.FOUR;
+                //Горизонтальные слои
+                hLayer1 = new Layer(Layer.TypeLayer.H1, Color.WHITE, Color.WHITE, Color.WHITE);
+                hLayer2 = new Layer(Layer.TypeLayer.H2, Color.WHITE, Color.WHITE, Color.WHITE);
+                hLayer3 = new Layer(Layer.TypeLayer.H3, Color.WHITE, Color.WHITE, Color.WHITE);
+                //Вертикальные слои                           
+                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.WHITE, Color.WHITE, Color.WHITE);
+                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.WHITE, Color.WHITE, Color.WHITE);
+                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.WHITE, Color.WHITE, Color.WHITE);
             }
         }
 
@@ -149,6 +83,16 @@
             public const int WHITE = 4;
             public const int BLUE = 5;
             public const int GREEN = 6;
+        }
+
+        public struct SideNumber
+        {
+            public const int ONE = 1;
+            public const int TWO = 2;
+            public const int THREE = 3;
+            public const int FOUR = 4;
+            public const int FIVE = 5;
+            public const int SIX = 6;
         }
     }
 }
