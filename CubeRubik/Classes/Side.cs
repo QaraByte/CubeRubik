@@ -3,14 +3,7 @@
     public class Side//:Cube
     {
         //public Layer Layer { get; set; }
-        public virtual void Rotate(int countTurns, int typeLayer)
-        {
-            if(typeLayer==Layer.TypeLayer.V3)
-            {
-                //this.layer1.vLayer3
-            }
-        }
-
+        
         public int _sideNumber;
 
         //public int[] hLayer1;
