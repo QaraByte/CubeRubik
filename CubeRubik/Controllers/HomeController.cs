@@ -31,7 +31,7 @@ namespace CubeRubik.Controllers
         {
             Cube cube = new Cube();
             
-            cube.Rotate(1, Layer.TypeLayer.V3);
+            cube.Rotate(1, Layer.TypeLayer.V3, Side.Direction.UP);
 
             //for (int i=0; i<ONE_SIDE; i++)
             //{

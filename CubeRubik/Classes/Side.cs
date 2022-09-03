@@ -87,5 +87,11 @@
             public const int FIVE = 5;
             public const int SIX = 6;
         }
+
+        public struct Direction
+        {
+            public const int UP = 0;
+            public const int DOWN = 1;
+        }
     }
 }
