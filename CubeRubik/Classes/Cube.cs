@@ -49,6 +49,10 @@
                     this.SideOne.vLayer3.cells[0] = cellColorFour0;
                     this.SideOne.vLayer3.cells[1] = cellColorFour1;
                     this.SideOne.vLayer3.cells[2] = cellColorFour2;
+                    //5-ая сторона
+                    //Первая ячейка первого горизонтального слоя
+                    int cellH1 = this.SideFive.hLayer1.cells[0];
+                    this.SideFive.hLayer1.cells[0] = this.SideFive.hLayer1.cells[2];
                 }
             }
         }

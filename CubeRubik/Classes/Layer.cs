@@ -81,18 +81,35 @@ namespace CubeRubik.Classes
 
         public struct TypeLayer
         {
+            /// <summary>
+            /// Нижний горизонтальный слой
+            /// </summary>
             public const int H1 = 1;
-            public const int H2 = 2;
-            public const int H3 = 3;
-            public const int V1 = 4;
-            public const int V2 = 5;
-            public const int V3 = 6;
-
             public const string H1_STR = "Horizontal layer 1";
+            /// <summary>
+            /// Средний горизонтальный слой
+            /// </summary>
+            public const int H2 = 2;
             public const string H2_STR = "Horizontal layer 2";
+            /// <summary>
+            /// Верхний горизонтальный слой
+            /// </summary>
+            public const int H3 = 3;
             public const string H3_STR = "Horizontal layer 3";
+            /// <summary>
+            /// Левый вертикальный слой
+            /// </summary>
+            public const int V1 = 4;
             public const string V1_STR = "Vertical layer 1";
+            /// <summary>
+            /// Средний вертикальный слой
+            /// </summary>
+            public const int V2 = 5;
             public const string V2_STR = "Vertical layer 2";
+            /// <summary>
+            /// Правый вертикальный слой
+            /// </summary>
+            public const int V3 = 6;
             public const string V3_STR = "Vertical layer 3";
         }
     }
