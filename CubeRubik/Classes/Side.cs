@@ -9,9 +9,9 @@
         public Layer hLayer1 { get; set; }
         public Layer hLayer2 { get; set; }
         public Layer hLayer3 { get; set; }
-        public Layer vLayer1 { get; set; }
-        public Layer vLayer2 { get; set; }
-        public Layer vLayer3 { get; set; }
+        //public Layer vLayer1 { get; set; }
+        //public Layer vLayer2 { get; set; }
+        //public Layer vLayer3 { get; set; }
 
         public Side(int sideNumber)
         {
@@ -23,9 +23,9 @@
                 hLayer3 = new Layer(Layer.TypeLayer.H3, Color.RED, Color.RED, Color.RED);
 
                 //Вертикальные слои
-                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.RED, Color.RED, Color.RED);
-                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.RED, Color.RED, Color.RED);
-                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.RED, Color.RED, Color.RED);
+                //vLayer1 = new Layer(Layer.TypeLayer.V1, Color.RED, Color.RED, Color.RED);
+                //vLayer2 = new Layer(Layer.TypeLayer.V2, Color.RED, Color.RED, Color.RED);
+                //vLayer3 = new Layer(Layer.TypeLayer.V3, Color.RED, Color.RED, Color.RED);
             }
             if (sideNumber == SideNumber.TWO)
             {
@@ -35,9 +35,9 @@
                 hLayer2 = new Layer(Layer.TypeLayer.H2, Color.YELLOW, Color.YELLOW, Color.YELLOW);
                 hLayer3 = new Layer(Layer.TypeLayer.H3, Color.YELLOW, Color.YELLOW, Color.YELLOW);
                 //Вертикальные слои                          
-                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.YELLOW, Color.YELLOW, Color.YELLOW);
-                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.YELLOW, Color.YELLOW, Color.YELLOW);
-                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.YELLOW, Color.YELLOW, Color.YELLOW);
+                //vLayer1 = new Layer(Layer.TypeLayer.V1, Color.YELLOW, Color.YELLOW, Color.YELLOW);
+                //vLayer2 = new Layer(Layer.TypeLayer.V2, Color.YELLOW, Color.YELLOW, Color.YELLOW);
+                //vLayer3 = new Layer(Layer.TypeLayer.V3, Color.YELLOW, Color.YELLOW, Color.YELLOW);
             }
             if (sideNumber == SideNumber.THREE)
             {
@@ -47,9 +47,9 @@
                 hLayer2 = new Layer(Layer.TypeLayer.H2, Color.ORANGE, Color.ORANGE, Color.ORANGE);
                 hLayer3 = new Layer(Layer.TypeLayer.H3, Color.ORANGE, Color.ORANGE, Color.ORANGE);
                 //Вертикальные слои                           
-                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.ORANGE, Color.ORANGE, Color.ORANGE);
-                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.ORANGE, Color.ORANGE, Color.ORANGE);
-                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.ORANGE, Color.ORANGE, Color.ORANGE);
+                //vLayer1 = new Layer(Layer.TypeLayer.V1, Color.ORANGE, Color.ORANGE, Color.ORANGE);
+                //vLayer2 = new Layer(Layer.TypeLayer.V2, Color.ORANGE, Color.ORANGE, Color.ORANGE);
+                //vLayer3 = new Layer(Layer.TypeLayer.V3, Color.ORANGE, Color.ORANGE, Color.ORANGE);
             }
             if (sideNumber == SideNumber.FOUR)
             {
@@ -59,9 +59,9 @@
                 hLayer2 = new Layer(Layer.TypeLayer.H2, Color.WHITE, Color.WHITE, Color.WHITE);
                 hLayer3 = new Layer(Layer.TypeLayer.H3, Color.WHITE, Color.WHITE, Color.WHITE);
                 //Вертикальные слои                           
-                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.WHITE, Color.WHITE, Color.WHITE);
-                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.WHITE, Color.WHITE, Color.WHITE);
-                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.WHITE, Color.WHITE, Color.WHITE);
+                //vLayer1 = new Layer(Layer.TypeLayer.V1, Color.WHITE, Color.WHITE, Color.WHITE);
+                //vLayer2 = new Layer(Layer.TypeLayer.V2, Color.WHITE, Color.WHITE, Color.WHITE);
+                //vLayer3 = new Layer(Layer.TypeLayer.V3, Color.WHITE, Color.WHITE, Color.WHITE);
             }
             if (sideNumber == SideNumber.FIVE)
             {
@@ -71,9 +71,9 @@
                 hLayer2 = new Layer(Layer.TypeLayer.H2, Color.BLUE, Color.BLUE, Color.BLUE);
                 hLayer3 = new Layer(Layer.TypeLayer.H3, Color.BLUE, Color.BLUE, Color.BLUE);
                 //Вертикальные слои
-                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.BLUE, Color.BLUE, Color.BLUE);
-                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.BLUE, Color.BLUE, Color.BLUE);
-                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.BLUE, Color.BLUE, Color.BLUE);
+                //vLayer1 = new Layer(Layer.TypeLayer.V1, Color.BLUE, Color.BLUE, Color.BLUE);
+                //vLayer2 = new Layer(Layer.TypeLayer.V2, Color.BLUE, Color.BLUE, Color.BLUE);
+                //vLayer3 = new Layer(Layer.TypeLayer.V3, Color.BLUE, Color.BLUE, Color.BLUE);
             }
             if (sideNumber == SideNumber.SIX)
             {
@@ -83,9 +83,9 @@
                 hLayer2 = new Layer(Layer.TypeLayer.H2, Color.GREEN, Color.GREEN, Color.GREEN);
                 hLayer3 = new Layer(Layer.TypeLayer.H3, Color.GREEN, Color.GREEN, Color.GREEN);
                 //Вертикальные слои        
-                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.GREEN, Color.GREEN, Color.GREEN);
-                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.GREEN, Color.GREEN, Color.GREEN);
-                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.GREEN, Color.GREEN, Color.GREEN);
+                //vLayer1 = new Layer(Layer.TypeLayer.V1, Color.GREEN, Color.GREEN, Color.GREEN);
+                //vLayer2 = new Layer(Layer.TypeLayer.V2, Color.GREEN, Color.GREEN, Color.GREEN);
+                //vLayer3 = new Layer(Layer.TypeLayer.V3, Color.GREEN, Color.GREEN, Color.GREEN);
             }
         }
 

@@ -61,7 +61,7 @@ body {
     /*float:left;*/
 }
 
-.top-side, .back-side, .front-side, .bottom-side, .left-side, .right-side{
+.top-side, .back-side, .side-two, .side-one, .left-side, .right-side{
     margin:10px;
     /*width:150px;*/
     /*display:inline-block;*/
