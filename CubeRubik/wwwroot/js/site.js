@@ -5,9 +5,9 @@
 
 $(document).ready(function () {
     console.log("ready!");
-    $('.top-side .layer1-top').addClass('orange');
-    $('.top-side .layer2-top').addClass('orange');
-    $('.top-side .layer3-top').addClass('orange');
+    //$('.top-side .layer1-top').addClass('orange');
+    //$('.top-side .layer2-top').addClass('orange');
+    //$('.top-side .layer3-top').addClass('orange');
 
     //$('.front-side .layer3-front').addClass('yellow');
     //$('.front-side .layer2-front').addClass('yellow');
@@ -75,36 +75,45 @@ function ClickMixButton() {
             }
             //Side 2
             for (let i = 0; i < data.sideTwo.hLayer3.cells.length; i++) {
-                switch (data.sideTwo.hLayer3.cells[i]) {
-                    case RED: $($('.layer3-two td')[i]).addClass('red'); break;
-                    case YELLOW: $($('.layer3-two td')[i]).addClass('yellow'); break;
-                    case ORANGE: $($('.layer3-two td')[i]).addClass('orange'); break;
-                    case WHITE: $($('.layer3-two td')[i]).addClass(''); break;
-                    case BLUE: $($('.layer3-two td')[i]).addClass('blue'); break;
-                    case GREEN: $($('.layer3-two td')[i]).addClass('green'); break;
-                }
+                SetClassColor(data.sideTwo.hLayer3.cells[i], i, '.layer3-two td');
             }
             for (let i = 0; i < data.sideTwo.hLayer2.cells.length; i++) {
-                switch (data.sideTwo.hLayer2.cells[i]) {
-                    case RED: $($('.layer2-two td')[i]).addClass('red'); break;
-                    case YELLOW: $($('.layer2-two td')[i]).addClass('yellow'); break;
-                    case ORANGE: $($('.layer2-two td')[i]).addClass('orange'); break;
-                    case WHITE: $($('.layer2-two td')[i]).addClass(''); break;
-                    case BLUE: $($('.layer2-two td')[i]).addClass('blue'); break;
-                    case GREEN: $($('.layer2-two td')[i]).addClass('green'); break;
-                }
+                SetClassColor(data.sideTwo.hLayer2.cells[i], i, '.layer2-two td');
             }
             for (let i = 0; i < data.sideTwo.hLayer1.cells.length; i++) {
-                switch (data.sideTwo.hLayer1.cells[i]) {
-                    case RED: $($('.layer1-two td')[i]).addClass('red'); break;
-                    case YELLOW: $($('.layer1-two td')[i]).addClass('yellow'); break;
-                    case ORANGE: $($('.layer1-two td')[i]).addClass('orange'); break;
-                    case WHITE: $($('.layer1-two td')[i]).addClass(''); break;
-                    case BLUE: $($('.layer1-two td')[i]).addClass('blue'); break;
-                    case GREEN: $($('.layer1-two td')[i]).addClass('green'); break;
-                }
+                SetClassColor(data.sideTwo.hLayer1.cells[i], i, '.layer1-two td');
             }
-            
+            //Side 3
+            for (let i = 0; i < data.sideThree.hLayer3.cells.length; i++) {
+                SetClassColor(data.sideThree.hLayer3.cells[i], i, '.layer3-three td');
+            }
+            for (let i = 0; i < data.sideThree.hLayer2.cells.length; i++) {
+                SetClassColor(data.sideThree.hLayer2.cells[i], i, '.layer2-three td');
+            }
+            for (let i = 0; i < data.sideThree.hLayer1.cells.length; i++) {
+                SetClassColor(data.sideThree.hLayer1.cells[i], i, '.layer1-three td');
+            }
+            //Side 4
+            for (let i = 0; i < data.sideFour.hLayer3.cells.length; i++) {
+                SetClassColor(data.sideFour.hLayer3.cells[i], i, '.layer3-four td');
+            }
+            for (let i = 0; i < data.sideFour.hLayer2.cells.length; i++) {
+                SetClassColor(data.sideFour.hLayer2.cells[i], i, '.layer2-four td');
+            }
+            for (let i = 0; i < data.sideFour.hLayer1.cells.length; i++) {
+                SetClassColor(data.sideFour.hLayer1.cells[i], i, '.layer1-four td');
+            }
         });
     });
+}
+
+function SetClassColor(color, cell, class1) {
+    switch (color) {
+        case RED: $($(class1)[cell]).addClass('red'); break;
+        case YELLOW: $($(class1)[cell]).addClass('yellow'); break;
+        case ORANGE: $($(class1)[cell]).addClass('orange'); break;
+        case WHITE: $($(class1)[cell]).addClass(''); break;
+        case BLUE: $($(class1)[cell]).addClass('blue'); break;
+        case GREEN: $($(class1)[cell]).addClass('green'); break;
+    }
 }
