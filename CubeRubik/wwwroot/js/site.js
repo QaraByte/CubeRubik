@@ -13,9 +13,9 @@ $(document).ready(function () {
     $('.front-side .layer2-front').addClass('yellow');
     $('.front-side .layer1-front').addClass('yellow');
 
-    $('.bottom-side .layer3-bottom').addClass('red');
-    $('.bottom-side .layer2-bottom').addClass('red');
-    $('.bottom-side .layer1-bottom').addClass('red');
+    //$('.bottom-side .layer3-bottom').addClass('red');
+    //$('.bottom-side .layer2-bottom').addClass('red');
+    //$('.bottom-side .layer1-bottom').addClass('red');
 
     $('.left-side .layer3-left').addClass('blue');
     $('.left-side .layer2-left').addClass('blue');
@@ -33,8 +33,9 @@ function ClickMixButton() {
         $.ajax({
             url: "Home/Mix",
             context: document.body
-        }).done(function () {
-            $(this).addClass("done");
+        }).done(function (data) {
+            //$(this).addClass("done");
+            $('.bottom-side').append(data);
         });
     });
 }

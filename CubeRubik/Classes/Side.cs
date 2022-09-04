@@ -6,10 +6,7 @@
         
         public int _sideNumber;
 
-        //public int[] hLayer1;
-        //Layer layer1;
         public Layer hLayer1 { get; set; }
-        //public int[] hLayer1 { get; set; }
         public Layer hLayer2 { get; set; }
         public Layer hLayer3 { get; set; }
         public Layer vLayer1 { get; set; }
@@ -65,6 +62,30 @@
                 vLayer1 = new Layer(Layer.TypeLayer.V1, Color.WHITE, Color.WHITE, Color.WHITE);
                 vLayer2 = new Layer(Layer.TypeLayer.V2, Color.WHITE, Color.WHITE, Color.WHITE);
                 vLayer3 = new Layer(Layer.TypeLayer.V3, Color.WHITE, Color.WHITE, Color.WHITE);
+            }
+            if (sideNumber == SideNumber.FIVE)
+            {
+                _sideNumber = SideNumber.FIVE;
+                //Горизонтальные слои
+                hLayer1 = new Layer(Layer.TypeLayer.H1, Color.BLUE, Color.BLUE, Color.BLUE);
+                hLayer2 = new Layer(Layer.TypeLayer.H2, Color.BLUE, Color.BLUE, Color.BLUE);
+                hLayer3 = new Layer(Layer.TypeLayer.H3, Color.BLUE, Color.BLUE, Color.BLUE);
+                //Вертикальные слои
+                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.BLUE, Color.BLUE, Color.BLUE);
+                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.BLUE, Color.BLUE, Color.BLUE);
+                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.BLUE, Color.BLUE, Color.BLUE);
+            }
+            if (sideNumber == SideNumber.SIX)
+            {
+                _sideNumber = SideNumber.SIX;
+                //Горизонтальные слои
+                hLayer1 = new Layer(Layer.TypeLayer.H1, Color.GREEN, Color.GREEN, Color.GREEN);
+                hLayer2 = new Layer(Layer.TypeLayer.H2, Color.GREEN, Color.GREEN, Color.GREEN);
+                hLayer3 = new Layer(Layer.TypeLayer.H3, Color.GREEN, Color.GREEN, Color.GREEN);
+                //Вертикальные слои        
+                vLayer1 = new Layer(Layer.TypeLayer.V1, Color.GREEN, Color.GREEN, Color.GREEN);
+                vLayer2 = new Layer(Layer.TypeLayer.V2, Color.GREEN, Color.GREEN, Color.GREEN);
+                vLayer3 = new Layer(Layer.TypeLayer.V3, Color.GREEN, Color.GREEN, Color.GREEN);
             }
         }
 

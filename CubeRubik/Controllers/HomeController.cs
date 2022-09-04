@@ -22,57 +22,19 @@ namespace CubeRubik.Controllers
         }
 
         /*
-        /---/
-        /---/
-        /---/
+        /-Horizontal Layer 3-/
+        /-Horizontal Layer 2-/
+        /-Horizontal Layer 1-/
         */
 
-        public ActionResult Mix()
+        public IActionResult Mix()
         {
             Cube cube = new Cube();
             
             cube.Rotate(1, Layer.TypeLayer.V3, Side.Direction.UP);
 
-            //for (int i=0; i<ONE_SIDE; i++)
-            //{
-            //    int yellow = new Random().Next(CUBE_PARTS);
-            //    if(yellow >= 0 && yellow<9)
-            //    {
-            //        //yellow_side.Add(yellow);
-
-            //        yellow1.layer.points.Add(yellow);
-            //    }
-            //    if(yellow>=9 && yellow<18)
-            //    {
-            //        orange.layer.points.Add(yellow);
-            //    }
-            //    if(yellow>=18 && yellow<27)
-            //    {
-            //        //white_side.Add(yellow);
-
-            //        white.layer.points.Add(yellow);
-            //    }
-            //    if (yellow >= 27 && yellow < 36)
-            //    {
-            //        //red_side.Add(yellow);
-
-            //        red.layer.points.Add(yellow);
-            //    }
-            //    if (yellow >= 36 && yellow < 45)
-            //    {
-            //        //blue_side.Add(yellow);
-
-            //        blue.layer.points.Add(yellow);
-            //    }
-            //    if (yellow >= 45 && yellow < 54)
-            //    {
-            //        //green_side.Add(yellow);
-
-            //        green.layer.points.Add(yellow);
-            //    }
-            //}
-
-            return View();
+            return Json(cube);
+            //return View();
         }
 
         // GET: HomeController/Create

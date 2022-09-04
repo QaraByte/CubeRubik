@@ -50,9 +50,22 @@
                     this.SideOne.vLayer3.cells[1] = cellColorFour1;
                     this.SideOne.vLayer3.cells[2] = cellColorFour2;
                     //5-ая сторона
-                    //Первая ячейка первого горизонтального слоя
-                    int cellH1 = this.SideFive.hLayer1.cells[0];
+                    //Сохраняем первый вертикальный слой
+                    int cellV1_0 = this.SideFive.vLayer1.cells[0];
+                    int cellV1_1 = this.SideFive.vLayer1.cells[1];
+                    int cellV1_2 = this.SideFive.vLayer1.cells[2];
+                    //Крутим 1-ый горизонтальный слой
+                    this.SideFive.hLayer3.cells[0] = this.SideFive.hLayer1.cells[0];
+                    this.SideFive.hLayer2.cells[0] = this.SideFive.hLayer1.cells[1];
                     this.SideFive.hLayer1.cells[0] = this.SideFive.hLayer1.cells[2];
+                    //Крутим 2-ой слой
+                    this.SideFive.hLayer3.cells[1] = this.SideFive.hLayer2.cells[0];
+                    this.SideFive.hLayer1.cells[1] = this.SideFive.hLayer2.cells[2];
+                    //Крутим 3-ий слой
+                    this.SideFive.hLayer3.cells[2] = this.SideFive.hLayer3.cells[0];
+                    this.SideFive.hLayer2.cells[2] = this.SideFive.hLayer3.cells[1];
+                    this.SideFive.hLayer1.cells[2] = this.SideFive.hLayer3.cells[2];
+                    
                 }
             }
         }
