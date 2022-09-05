@@ -17,13 +17,13 @@ $(document).ready(function () {
     //$('.bottom-side .layer2-bottom').addClass('red');
     //$('.bottom-side .layer1-bottom').addClass('red');
 
-    $('.left-side .layer3-left').addClass('blue');
-    $('.left-side .layer2-left').addClass('blue');
-    $('.left-side .layer1-left').addClass('blue');
+    //$('.left-side .layer3-left').addClass('blue');
+    //$('.left-side .layer2-left').addClass('blue');
+    //$('.left-side .layer1-left').addClass('blue');
 
-    $('.right-side .layer3-right').addClass('green');
-    $('.right-side .layer2-right').addClass('green');
-    $('.right-side .layer1-right').addClass('green');
+    //$('.right-side .layer3-right').addClass('green');
+    //$('.right-side .layer2-right').addClass('green');
+    //$('.right-side .layer1-right').addClass('green');
 
     ClickMixButton();
 });
@@ -102,6 +102,26 @@ function ClickMixButton() {
             }
             for (let i = 0; i < data.sideFour.hLayer1.cells.length; i++) {
                 SetClassColor(data.sideFour.hLayer1.cells[i], i, '.layer1-four td');
+            }
+            //Side 5
+            for (let i = 0; i < data.sideFive.hLayer3.cells.length; i++) {
+                SetClassColor(data.sideFive.hLayer3.cells[i], i, '.layer3-five td');
+            }
+            for (let i = 0; i < data.sideFive.hLayer2.cells.length; i++) {
+                SetClassColor(data.sideFive.hLayer2.cells[i], i, '.layer2-five td');
+            }
+            for (let i = 0; i < data.sideFive.hLayer1.cells.length; i++) {
+                SetClassColor(data.sideFive.hLayer1.cells[i], i, '.layer1-five td');
+            }
+            //Side 6
+            for (let i = 0; i < data.sideSix.hLayer3.cells.length; i++) {
+                SetClassColor(data.sideSix.hLayer3.cells[i], i, '.layer3-six td');
+            }
+            for (let i = 0; i < data.sideSix.hLayer2.cells.length; i++) {
+                SetClassColor(data.sideSix.hLayer2.cells[i], i, '.layer2-six td');
+            }
+            for (let i = 0; i < data.sideSix.hLayer1.cells.length; i++) {
+                SetClassColor(data.sideSix.hLayer1.cells[i], i, '.layer1-six td');
             }
         });
     });

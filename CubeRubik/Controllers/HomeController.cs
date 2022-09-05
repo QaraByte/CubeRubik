@@ -15,6 +15,12 @@ namespace CubeRubik.Controllers
             return View();
         }
 
+        public IActionResult Init()
+        {
+            Cube cube = new();
+            return Json(cube);
+        }
+
         // GET: HomeController/Details/5
         public ActionResult Details(int id)
         {
@@ -27,11 +33,10 @@ namespace CubeRubik.Controllers
         /-Horizontal Layer 1-/
         */
 
-        public IActionResult Mix()
+        public IActionResult Mix(Cube cube)
         {
-            Cube cube = new Cube();
-            
-            cube.Rotate(1, Layer.TypeLayer.V3, Side.Direction.UP);
+            //Cube cube = new Cube();
+            cube.Rotate(Layer.TypeLayer.V3, Side.Direction.UP, 1);
 
             return Json(cube);
             //return View();

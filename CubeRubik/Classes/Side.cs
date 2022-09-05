@@ -21,11 +21,6 @@
                 hLayer1 = new Layer(Layer.TypeLayer.H1, Color.RED, Color.RED, Color.RED);
                 hLayer2 = new Layer(Layer.TypeLayer.H2, Color.RED, Color.RED, Color.RED);
                 hLayer3 = new Layer(Layer.TypeLayer.H3, Color.RED, Color.RED, Color.RED);
-
-                //Вертикальные слои
-                //vLayer1 = new Layer(Layer.TypeLayer.V1, Color.RED, Color.RED, Color.RED);
-                //vLayer2 = new Layer(Layer.TypeLayer.V2, Color.RED, Color.RED, Color.RED);
-                //vLayer3 = new Layer(Layer.TypeLayer.V3, Color.RED, Color.RED, Color.RED);
             }
             if (sideNumber == SideNumber.TWO)
             {

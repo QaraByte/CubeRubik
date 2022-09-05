@@ -22,7 +22,7 @@
             SideSix = new Side(Side.SideNumber.SIX);
         }
 
-        public void Rotate(int countTurns, int typeLayer, int direction)
+        public void Rotate(int typeLayer, int direction, int countTurns)
         {
             if (direction == Side.Direction.UP)
             {
