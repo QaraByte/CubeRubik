@@ -74,55 +74,25 @@ function ClickMixButton() {
                 }
             }
             //Side 2
-            for (let i = 0; i < data.sideTwo.hLayer3.cells.length; i++) {
-                SetClassColor(data.sideTwo.hLayer3.cells[i], i, '.layer3-two td');
-            }
-            for (let i = 0; i < data.sideTwo.hLayer2.cells.length; i++) {
-                SetClassColor(data.sideTwo.hLayer2.cells[i], i, '.layer2-two td');
-            }
-            for (let i = 0; i < data.sideTwo.hLayer1.cells.length; i++) {
-                SetClassColor(data.sideTwo.hLayer1.cells[i], i, '.layer1-two td');
-            }
+            SetClassColor(data.sideTwo.hLayer3.cells, '.layer3-two td');
+            SetClassColor(data.sideTwo.hLayer2.cells, '.layer2-two td');
+            SetClassColor(data.sideTwo.hLayer1.cells, '.layer1-two td');
             //Side 3
-            for (let i = 0; i < data.sideThree.hLayer3.cells.length; i++) {
-                SetClassColor(data.sideThree.hLayer3.cells[i], i, '.layer3-three td');
-            }
-            for (let i = 0; i < data.sideThree.hLayer2.cells.length; i++) {
-                SetClassColor(data.sideThree.hLayer2.cells[i], i, '.layer2-three td');
-            }
-            for (let i = 0; i < data.sideThree.hLayer1.cells.length; i++) {
-                SetClassColor(data.sideThree.hLayer1.cells[i], i, '.layer1-three td');
-            }
+            SetClassColor(data.sideThree.hLayer3.cells, '.layer3-three td');
+            SetClassColor(data.sideThree.hLayer2.cells, '.layer2-three td');
+            SetClassColor(data.sideThree.hLayer1.cells, '.layer1-three td');
             //Side 4
-            for (let i = 0; i < data.sideFour.hLayer3.cells.length; i++) {
-                SetClassColor(data.sideFour.hLayer3.cells[i], i, '.layer3-four td');
-            }
-            for (let i = 0; i < data.sideFour.hLayer2.cells.length; i++) {
-                SetClassColor(data.sideFour.hLayer2.cells[i], i, '.layer2-four td');
-            }
-            for (let i = 0; i < data.sideFour.hLayer1.cells.length; i++) {
-                SetClassColor(data.sideFour.hLayer1.cells[i], i, '.layer1-four td');
-            }
+            SetClassColor(data.sideFour.hLayer3.cells, '.layer3-four td');
+            SetClassColor(data.sideFour.hLayer2.cells, '.layer2-four td');
+            SetClassColor(data.sideFour.hLayer1.cells, '.layer1-four td');
             //Side 5
-            for (let i = 0; i < data.sideFive.hLayer3.cells.length; i++) {
-                SetClassColor(data.sideFive.hLayer3.cells[i], i, '.layer3-five td');
-            }
-            for (let i = 0; i < data.sideFive.hLayer2.cells.length; i++) {
-                SetClassColor(data.sideFive.hLayer2.cells[i], i, '.layer2-five td');
-            }
-            for (let i = 0; i < data.sideFive.hLayer1.cells.length; i++) {
-                SetClassColor(data.sideFive.hLayer1.cells[i], i, '.layer1-five td');
-            }
+            SetClassColor(data.sideFive.hLayer3.cells, '.layer3-five td');
+            SetClassColor(data.sideFive.hLayer2.cells, '.layer2-five td');
+            SetClassColor(data.sideFive.hLayer1.cells, '.layer1-five td');
             //Side 6
-            for (let i = 0; i < data.sideSix.hLayer3.cells.length; i++) {
-                SetClassColor(data.sideSix.hLayer3.cells[i], i, '.layer3-six td');
-            }
-            for (let i = 0; i < data.sideSix.hLayer2.cells.length; i++) {
-                SetClassColor(data.sideSix.hLayer2.cells[i], i, '.layer2-six td');
-            }
-            for (let i = 0; i < data.sideSix.hLayer1.cells.length; i++) {
-                SetClassColor(data.sideSix.hLayer1.cells[i], i, '.layer1-six td');
-            }
+            SetClassColor(data.sideSix.hLayer3.cells, '.layer3-six td');
+            SetClassColor(data.sideSix.hLayer2.cells, '.layer2-six td');
+            SetClassColor(data.sideSix.hLayer1.cells, '.layer1-six td');
         });
     });
 }
@@ -133,76 +103,42 @@ function Init() {
         context: document.body
     }).done(function (data) {
         //Side 1
-        for (let i = 0; i < data.sideOne.hLayer3.cells.length; i++) {
-            SetClassColor(data.sideOne.hLayer3.cells[i], i, '.layer3-one td');
-        }
-        for (let i = 0; i < data.sideOne.hLayer2.cells.length; i++) {
-            SetClassColor(data.sideOne.hLayer2.cells[i], i, '.layer2-one td');
-        }
-        for (let i = 0; i < data.sideOne.hLayer1.cells.length; i++) {
-            SetClassColor(data.sideOne.hLayer1.cells[i], i, '.layer1-one td');
-        }
+        SetClassColor(data.sideOne.hLayer3.cells, '.layer3-one td');
+        SetClassColor(data.sideOne.hLayer2.cells, '.layer2-one td');
+        SetClassColor(data.sideOne.hLayer1.cells, '.layer1-one td');
         //Side 2
-        for (let i = 0; i < data.sideTwo.hLayer3.cells.length; i++) {
-            SetClassColor(data.sideTwo.hLayer3.cells[i], i, '.layer3-two td');
-        }
-        for (let i = 0; i < data.sideTwo.hLayer2.cells.length; i++) {
-            SetClassColor(data.sideTwo.hLayer2.cells[i], i, '.layer2-two td');
-        }
-        for (let i = 0; i < data.sideTwo.hLayer1.cells.length; i++) {
-            SetClassColor(data.sideTwo.hLayer1.cells[i], i, '.layer1-two td');
-        }
+        SetClassColor(data.sideTwo.hLayer3.cells, '.layer3-two td');
+        SetClassColor(data.sideTwo.hLayer2.cells, '.layer2-two td');
+        SetClassColor(data.sideTwo.hLayer1.cells, '.layer1-two td');
         //Side 3
-        for (let i = 0; i < data.sideThree.hLayer3.cells.length; i++) {
-            SetClassColor(data.sideThree.hLayer3.cells[i], i, '.layer3-three td');
-        }
-        for (let i = 0; i < data.sideThree.hLayer2.cells.length; i++) {
-            SetClassColor(data.sideThree.hLayer2.cells[i], i, '.layer2-three td');
-        }
-        for (let i = 0; i < data.sideThree.hLayer1.cells.length; i++) {
-            SetClassColor(data.sideThree.hLayer1.cells[i], i, '.layer1-three td');
-        }
+        SetClassColor(data.sideThree.hLayer3.cells, '.layer3-three td');
+        SetClassColor(data.sideThree.hLayer2.cells, '.layer2-three td');
+        SetClassColor(data.sideThree.hLayer1.cells, '.layer1-three td');
         //Side 4
-        for (let i = 0; i < data.sideFour.hLayer3.cells.length; i++) {
-            SetClassColor(data.sideFour.hLayer3.cells[i], i, '.layer3-four td');
-        }
-        for (let i = 0; i < data.sideFour.hLayer2.cells.length; i++) {
-            SetClassColor(data.sideFour.hLayer2.cells[i], i, '.layer2-four td');
-        }
-        for (let i = 0; i < data.sideFour.hLayer1.cells.length; i++) {
-            SetClassColor(data.sideFour.hLayer1.cells[i], i, '.layer1-four td');
-        }
+        SetClassColor(data.sideFour.hLayer3.cells, '.layer3-four td');
+        SetClassColor(data.sideFour.hLayer2.cells, '.layer2-four td');
+        SetClassColor(data.sideFour.hLayer1.cells, '.layer1-four td');
         //Side 5
-        for (let i = 0; i < data.sideFive.hLayer3.cells.length; i++) {
-            SetClassColor(data.sideFive.hLayer3.cells[i], i, '.layer3-five td');
-        }
-        for (let i = 0; i < data.sideFive.hLayer2.cells.length; i++) {
-            SetClassColor(data.sideFive.hLayer2.cells[i], i, '.layer2-five td');
-        }
-        for (let i = 0; i < data.sideFive.hLayer1.cells.length; i++) {
-            SetClassColor(data.sideFive.hLayer1.cells[i], i, '.layer1-five td');
-        }
+        SetClassColor(data.sideFive.hLayer3.cells, '.layer3-five td');
+        SetClassColor(data.sideFive.hLayer2.cells, '.layer2-five td');
+        SetClassColor(data.sideFive.hLayer1.cells, '.layer1-five td');
         //Side 6
-        for (let i = 0; i < data.sideSix.hLayer3.cells.length; i++) {
-            SetClassColor(data.sideSix.hLayer3.cells[i], i, '.layer3-six td');
-        }
-        for (let i = 0; i < data.sideSix.hLayer2.cells.length; i++) {
-            SetClassColor(data.sideSix.hLayer2.cells[i], i, '.layer2-six td');
-        }
-        for (let i = 0; i < data.sideSix.hLayer1.cells.length; i++) {
-            SetClassColor(data.sideSix.hLayer1.cells[i], i, '.layer1-six td');
-        }
+        SetClassColor(data.sideSix.hLayer3.cells, '.layer3-six td');
+        SetClassColor(data.sideSix.hLayer2.cells, '.layer2-six td');
+        SetClassColor(data.sideSix.hLayer1.cells, '.layer1-six td');
     })
 }
 
-function SetClassColor(color, cell, class1) {
-    switch (color) {
-        case RED: $($(class1)[cell]).addClass('red'); break;
-        case YELLOW: $($(class1)[cell]).addClass('yellow'); break;
-        case ORANGE: $($(class1)[cell]).addClass('orange'); break;
-        case WHITE: $($(class1)[cell]).addClass(''); break;
-        case BLUE: $($(class1)[cell]).addClass('blue'); break;
-        case GREEN: $($(class1)[cell]).addClass('green'); break;
+function SetClassColor(cells, class1) {
+    for (let i = 0; i < cells.length; i++) {
+        switch (cells[i]) {
+            case RED: $($(class1)[i]).addClass('red'); break;
+            case YELLOW: $($(class1)[i]).addClass('yellow'); break;
+            case ORANGE: $($(class1)[i]).addClass('orange'); break;
+            case WHITE: $($(class1)[i]).addClass(''); break;
+            case BLUE: $($(class1)[i]).addClass('blue'); break;
+            case GREEN: $($(class1)[i]).addClass('green'); break;
+        }
     }
 }
 
